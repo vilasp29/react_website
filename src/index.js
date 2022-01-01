@@ -7,7 +7,7 @@ ReactDOM.render(
 	<React.StrictMode>
 		<Router>
 			<Routes>
-				<Route path="/" component={App} />
+				<Route path="/react_website" component={App} />
 			</Routes>
 		</Router>
 	</React.StrictMode>,
