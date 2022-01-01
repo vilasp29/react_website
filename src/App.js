@@ -32,20 +32,21 @@ function App() {
 		<div className="App">
 	    	<Header title={title} />
 		    	<Routes>
-			    	<Route path="/">
-                    	<Login AccountData={AccountData} setAccountData={setAccountData} email={email} setEmail={setEmail} setTitle = {setTitle} />
-					</Route>
-					<Route path="/data">
-			  			<Data AccountData={AccountData} setAccountData={setAccountData} email={email} setEmail={setEmail}  setTitle = {setTitle}  API_URL={API_URL} />
-					</Route>
-					<Route path="/sign-up">
-			 	 		<SignUp AccountData={AccountData} setAccountData={setAccountData} setTitle = {setTitle} API_URL={API_URL} />
-					</Route>
-						<Route path="/about" >
-			  		<About setTitle={setTitle} />
+					<Route path="/" >
+				    	<Route index element={
+	                    	<Login AccountData={AccountData} setAccountData={setAccountData} email={email} setEmail={setEmail} setTitle = {setTitle} />
+						} />
+						<Route path="data" element={
+				  			<Data AccountData={AccountData} setAccountData={setAccountData} email={email} setEmail={setEmail}  setTitle = {setTitle}  API_URL={API_URL} />
+						} />
+						<Route path="sign-up" element={
+				 	 		<SignUp AccountData={AccountData} setAccountData={setAccountData} setTitle = {setTitle} API_URL={API_URL} />
+					 	} />
+						<Route path="about" element={
+				  			<About setTitle={setTitle} />
+						} />
 					</Route>
 		  		</Routes>
-	    	<Footer />
 	   </div>
     )
 }
