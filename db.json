@@ -1,0 +1,130 @@
+{
+  "accounts": [
+    {
+      "email": "test",
+      "password": "test",
+      "name": "test",
+      "phone": "test",
+      "houseNum": "test",
+      "address1": "test",
+      "address2": "test",
+      "post": "test",
+      "role": "test",
+      "times": {
+        "m": "test",
+        "t": "test",
+        "w": "test",
+        "th": "test",
+        "f": "test",
+        "s": "test",
+        "su": "test"
+      },
+      "id": 0
+    },
+    {
+      "id": 1,
+      "email": "vilas@prabhu.email",
+      "password": "Password1",
+      "name": "Vilas",
+      "phone": "7540122144",
+      "houseNum": "85",
+      "address1": "",
+      "address2": "",
+      "post": "RG6 4EX",
+      "role": "D",
+      "times": {
+        "m": true,
+        "t": true,
+        "w": false,
+        "th": false,
+        "f": false,
+        "s": true,
+        "su": true
+      }
+    },
+    {
+      "id": 2,
+      "email": "a.p@r.com",
+      "password": "Password1",
+      "name": "aaa",
+      "phone": "9999999999",
+      "houseNum": "3",
+      "address1": "",
+      "address2": "",
+      "post": "RG6 5YP",
+      "role": "R",
+      "times": {
+        "m": true,
+        "t": true,
+        "w": false,
+        "th": false,
+        "f": false,
+        "s": false,
+        "su": false
+      }
+    },
+    {
+      "id": 3,
+      "email": "qre@asd.com",
+      "password": "FNc3aE9psnqtNgf",
+      "name": "Anish",
+      "phone": "1234222222",
+      "houseNum": "87",
+      "address1": "Collins Drive",
+      "address2": "Reading",
+      "post": "RG6 5YP",
+      "role": "R",
+      "times": {
+        "m": false,
+        "t": false,
+        "w": false,
+        "th": false,
+        "f": false,
+        "s": false,
+        "su": false
+      }
+    },
+    {
+      "id": 4,
+      "email": "2wyrh@u.com",
+      "password": "FNc3aE9psnqtNgf",
+      "name": "William",
+      "phone": "2356784444",
+      "houseNum": "95",
+      "address1": "RedHatch Drive",
+      "address2": "Reading",
+      "post": "RG6 5YP",
+      "role": "R",
+      "times": {
+        "m": false,
+        "t": false,
+        "w": false,
+        "th": false,
+        "f": false,
+        "s": false,
+        "su": false
+      }
+    },
+    {
+      "id": 5,
+      "email": "bob@marsh.com",
+      "password": "Password1",
+      "name": "Bob Marsh",
+      "phone": "8523698741",
+      "houseNum": "87",
+      "address1": "",
+      "address2": "",
+      "post": "RG65AE",
+      "role": "R",
+      "times": {
+        "m": true,
+        "t": true,
+        "w": true,
+        "th": true,
+        "f": true,
+        "s": false,
+        "su": false
+      }
+    }
+  ]
+}
