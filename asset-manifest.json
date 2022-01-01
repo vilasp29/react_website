@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.76ed8915.css",
-    "main.js": "/static/js/main.35ef2066.js",
-    "index.html": "/index.html",
-    "main.76ed8915.css.map": "/static/css/main.76ed8915.css.map",
-    "main.35ef2066.js.map": "/static/js/main.35ef2066.js.map"
+    "main.css": "/CargoClickers/static/css/main.76ed8915.css",
+    "main.js": "/CargoClickers/static/js/main.d3e5a6b7.js",
+    "index.html": "/CargoClickers/index.html",
+    "main.76ed8915.css.map": "/CargoClickers/static/css/main.76ed8915.css.map",
+    "main.d3e5a6b7.js.map": "/CargoClickers/static/js/main.d3e5a6b7.js.map"
   },
   "entrypoints": [
     "static/css/main.76ed8915.css",
-    "static/js/main.35ef2066.js"
+    "static/js/main.d3e5a6b7.js"
   ]
 }
