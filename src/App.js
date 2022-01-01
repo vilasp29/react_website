@@ -32,16 +32,16 @@ function App() {
 		<div className="App">
 	    	<Header title={title} />
 		    	<Routes>
-			    	<Route exact path="/">
+			    	<Route exact path="/react_website">
                     	<Login AccountData={AccountData} setAccountData={setAccountData} email={email} setEmail={setEmail} setTitle = {setTitle} />
 					</Route>
-					<Route exact path="/data">
+					<Route exact path="/react_website/data">
 			  			<Data AccountData={AccountData} setAccountData={setAccountData} email={email} setEmail={setEmail}  setTitle = {setTitle}  API_URL={API_URL} />
 					</Route>
-					<Route exact path="/sign-up">
+					<Route exact path="/react_website/sign-up">
 			 	 		<SignUp AccountData={AccountData} setAccountData={setAccountData} setTitle = {setTitle} API_URL={API_URL} />
 					</Route>
-						<Route exact path="/about" >
+						<Route exact path="/react_website/about" >
 			  		<About setTitle={setTitle} />
 					</Route>
 		  		</Routes>
