@@ -1,0 +1,6 @@
+cd OneDrive\Documents\Anish\Locker\Code\Websites\react-test-app
+set HTTPS=true&&npx json-server --host 192.168.0.23 -p 3500 -w data/db.json
+
+cd OneDrive\Documents\Anish\Locker\Code\Websites\react-test-app
+set HTTPS=true&&npm start
+
