@@ -10,7 +10,8 @@ import { Route, Switch } from 'react-router-dom';
 
 
 function App() {
-	const API_URL = 'http://192.168.0.23:3500/accounts';
+	//const API_URL = 'http://192.168.0.23:3500/accounts';
+	const API_URL = 'https://my-json-server.typicode.com/vilasp29/react_website/accounts';
 	const [title, setTitle] = useState("");
 	const [email, setEmail] = useState("");
     const [AccountData, setAccountData] = useState([]);
