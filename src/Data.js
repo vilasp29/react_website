@@ -1,10 +1,10 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import apiRequest from './apiRequest';
 
 import Resident from './Resident';
 import Delivery from './Delivery';
 const Data = ( {AccountData, setAccountData, email, setEmail, setTitle, API_URL} ) => {
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const account = AccountData.filter(AccountData => ((AccountData.email).toLowerCase()).includes(email.toLowerCase()));
 	const newData = account;
@@ -23,7 +23,7 @@ const Data = ( {AccountData, setAccountData, email, setEmail, setTitle, API_URL}
 				</>
 			}
 			{!email &&
-				history.push("/")
+				navigate("/")
 			}
 		</div>
 	)

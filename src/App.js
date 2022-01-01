@@ -6,7 +6,7 @@ import SignUp from './SignUp.js';
 import About from './About.js';
 
 import { useState, useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
     return (
 		<div className="App">
 	    	<Header title={title} />
-		    	<Switch>
+		    	<Routes>
 			    	<Route exact path="/">
                     	<Login AccountData={AccountData} setAccountData={setAccountData} email={email} setEmail={setEmail} setTitle = {setTitle} />
 					</Route>
@@ -44,7 +44,7 @@ function App() {
 						<Route exact path="/about" >
 			  		<About setTitle={setTitle} />
 					</Route>
-		  		</Switch>
+		  		</Routes>
 	    	<Footer />
 	   </div>
     )

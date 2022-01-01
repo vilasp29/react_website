@@ -1,5 +1,5 @@
-import {useState} from 'react'
-import {useHistory} from 'react-router-dom'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import apiRequest from './apiRequest'
 	
 const SignUp = ( {AccountData, setAccountData, setTitle, API_URL} ) => {
@@ -13,7 +13,7 @@ const SignUp = ( {AccountData, setAccountData, setTitle, API_URL} ) => {
 	const [address1, setAddress1] = useState("");
 	const [address2, setAddress2] = useState("");
 	const [houseNum, setHouseNum] = useState("");
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const onSubmit = async (e) => {
 		e.preventDefault();
@@ -29,14 +29,14 @@ const SignUp = ( {AccountData, setAccountData, setTitle, API_URL} ) => {
 				body: JSON.stringify(newAccount)
 			}
 			await apiRequest(API_URL, options);
-			history.push("/");
+			navigate("/");
 		} else {
 			setErrLabel("This postcode is invalid.");
 		}
 	}
 	
 	const onCancel = () => {
-		history.push("/");
+		navigate("/");
 	}
 	return (
 		<form onSubmit={onSubmit} onLoad={setTitle("Sign-Up")} className="SignUp">
@@ -50,7 +50,6 @@ const SignUp = ( {AccountData, setAccountData, setTitle, API_URL} ) => {
 					setErrLabel(notOk ? "This email already exists." : "");
 					setEmail(e.target.value)
 				}}
-				onUpda
 			/>
 			<span className="validity"></span>
 			<br/>

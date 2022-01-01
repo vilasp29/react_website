@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { useHistory, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Login = ( {AccountData, setAccountData, email, setEmail, setTitle} ) => {
 	const [pass, setPass] = useState('');
 	const [label, setLabel] = useState('');
-	const history = useHistory();
+	const navigate = useNavigate();
 	
 	const checkData = (e) => {
 		e.preventDefault();
@@ -12,7 +12,7 @@ const Login = ( {AccountData, setAccountData, email, setEmail, setTitle} ) => {
 		
 		if (account[0]) {
 			if (account[0].password === pass) {
-				history.push("/data");
+				navigate("/data");
 				return;
 			}
 		}

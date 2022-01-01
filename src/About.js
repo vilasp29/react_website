@@ -1,6 +1,6 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const About = ( {setTitle} ) => {
-	const history = useHistory();
+	const navigate = useNavigate();
 	return (
 		<div className='about'>
 		{setTitle("About")}
@@ -18,7 +18,7 @@ const About = ( {setTitle} ) => {
 					</ol>
 				</p>
 			</p>
-			<button onClick={history.goBack}>Return to previous page</button>
+			<button onClick={() => {navigate(-1)}}>Return to previous page</button>
 		</div>
 	)
 }
