@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<Routes>
 				<Route path="/*" element={<App />} />
 			</Routes>
