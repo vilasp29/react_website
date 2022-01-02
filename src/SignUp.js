@@ -28,7 +28,8 @@ const SignUp = ( {AccountData, setAccountData, setTitle, API_URL} ) => {
 				},
 				body: JSON.stringify(newAccount)
 			}
-			await apiRequest(API_URL, options);
+			await apiRequest(`${API_URL}/${newAccount.id}`, options);
+			
 			navigate("/");
 		} else {
 			setErrLabel("This postcode is invalid.");

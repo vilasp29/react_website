@@ -47,6 +47,7 @@ function App() {
 						} />
 					</Route>
 		  		</Routes>
+			<Footer title={title} />
 	   </div>
     )
 }
