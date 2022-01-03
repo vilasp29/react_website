@@ -12,6 +12,5 @@ const Footer = () => {
 	)
 }
 
-//style={{alignitems: "left"}}
 
 export default Footer

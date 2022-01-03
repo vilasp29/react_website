@@ -28,7 +28,7 @@ const SignUp = ( {AccountData, setAccountData, setTitle, API_URL} ) => {
 				},
 				body: JSON.stringify(newAccount)
 			}
-			await apiRequest(`${API_URL}/${newAccount.id}`, options);
+			await apiRequest(`${API_URL}`, options);
 			
 			navigate("/");
 		} else {

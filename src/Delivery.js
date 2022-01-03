@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const Delivery = ({AccountData, setAccountData, email, setEmail, setTitle, API_URL}) => {
+const Delivery = ({AccountData, setAccountData, email, setEmail, setTitle, day}) => {
 	const [locPost, setLocPost] = useState("");
 	const [nearAccounts, setNearAccounts] = useState([]);
 
@@ -10,18 +10,16 @@ const Delivery = ({AccountData, setAccountData, email, setEmail, setTitle, API_U
 		const options = {
 			method: 'GET'
 		}
-		const result = await fetch(`https://api.postcodes.io/postcodes?lon=${pos.coords.longitude}&lat=${pos.coords.latitude}`, options);
+		const result = await fetch(`https://api.postcodes.io/postcodes?lon=${pos.coords.longitude}&lat=${pos.coords.latitude}&radius=1000m`, options);
 		const respJson = await result.json();
 		setLocPost(respJson.result[0].postcode);
 		
 		if (locPost) {
-			const result2 = await fetch (`https://api.postcodes.io/postcodes/${locPost}/nearest`, options)
-			const respJson2 = await result2.json();
-			const nearbyPost = respJson2.result.map((o) => {
-				return o.postcode;
+			const postcodes = respJson.result.map((r) => {
+				return r.postcode;
 			});
 			setNearAccounts(AccountData.filter((a) => {
-				if (nearbyPost.includes(a.post)) {
+				if (postcodes.includes(a.post)) {
 					return a;
 				}
 			}));
