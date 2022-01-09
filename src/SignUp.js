@@ -68,7 +68,7 @@ const SignUp = ( {AccountData, setAccountData, setTitle, API_URL} ) => {
 			<input
 				required
 				type="tel"
-				pattern="0[0-9]{10}"
+				pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$"
 				onChange={(e) => {setPhone(e.target.value)}}
 			/>
 			<span className="validity"></span>
